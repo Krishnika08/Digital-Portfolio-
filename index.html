@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Portfolio</title>
+
+    <style>
+
+        Body {
+
+            Font-family: Arial, sans-serif;
+
+            Margin: 0;
+
+            Padding: 0;
+
+            Background-color: #84a6e9;
+
+        }
+
+
+
+        Header {
+
+            Background-color: #941919;
+
+            Color: #fff;
+
+            Text-align: center;
+
+            Padding: 2rem 0;
+
+            Position: relative; /* Add this */
+
+        }
+
+
+
+        .header-content h1 {
+
+            Font-size: 2.5rem;
+
+        }
+
+        /* Add styles for the round profile picture */
+
+        .profile-picture {
+
+            Width: 100px; /* Adjust the size as needed */
+
+            Height: 100px;
+
+            Border-radius: 75%; /* Create a circular shape */
+
+            Object-fit: cover; /* To ensure the image fills the circular area */
+
+            Position: absolute; /* Add this */
+
+            Top: 75px; /* Adjust top position as needed */
+
+            Left: 75px; /* Adjust left position as needed */
+
+        }
+
+        Nav {
+
+            Background-color: #333;
+
+            Color: #fff;
+
+            Text-align: center;
+
+        }
+
+        Nav ul {
+
+            List-style-type: none;
+
+            Padding: 0;
+
+        }
+
+        Nav ul li {
+
+            Display: inline;
+
+            Margin: 0 20px;
+
+        }
+
+        Nav ul li a {
+
+            Text-decoration: none;
+
+            Color: #fff;
+
+        }
+
+        .section-content {
+
+            Background-color: #fff;
+
+            Padding: 2rem;
+
+            Margin: 1rem;
+
+            Border-radius: 20px;
+
+            Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            Text-align: justify;
+
+        }
+
+        .download-button {
+
+           Background-color: #333;
+
+            Color: #fff;
+
+            Padding: 0.5rem 1rem;
+
+            Text-decoration: none;
+
+            Border-radius: 20px;
+
+            Display: inline-block;
+
+            Margin-top: 10px;
+
+            Align-self: center;
+
+
+
+        }
+
+        .download-button:hover {
+
+            Background-color: #555;
+
+        }
+
+        Footer {
+
+           Text-align: center;
+
+            Padding: 1rem 0;
+
+            Background-color: #333;
+
+            Color: #fff;
+
+        }
+
+        Ul {
+
+            List-style-type: disc;
+
+            Padding-left: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class=”header-content”>
+
+            <!—Add your profile picture here 
+
+            <img src=”Profile.jpg” alt=”Your Profile Picture” class=”profile-picture”>
+
+            <h1>KRISHNIKA D</h1>
+
+            <p>Am Software Developer</p>
+
+        </div>
+
+    </header>
+
+    <nav>
+
+        <ul>
+
+            <li><a href=”#about”>About</a></li>
+
+            <li><a href=”#education”>Education</a></li>
+
+            <li><a href=”#skills”>Skills</a></li>
+
+            <li><a href=”#projects”>Projects</a></li>
+
+            <li><a href=”#resume”>Resume</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section id=”about”>
+
+        <div class=”section-content”>
+
+            <h2>About Me</h2>
+
+            <p> Hello! My name is Krishnika D, and I’m pursuing BSc majoring in Computer Science at A.V.P College of Arts and Science, Tirupur.
+
+I’m passionate about software development and its potential to transform industries and improve lives. Outside of academics, I enjoy writing and volunteering for social causes that promote education and equality
+
+
+
+My career goal is to become a skilled web developer, specializing in front-end development and user experience design. I’ve gained hands-on experience in web development by building personal projects and contributing to open-source repositories, and I’ve developed skills in HTML, CSS, and JavaScript.
+
+
+
+I’m excited to continue learning and growing as a professional. Feel free to connect with me through krishnikad95gmail.com  </p>
+
+
+
+        </div>
+
+    </section>
+
+    <section id=”education”>
+
+        <div class=”section-content”>
+
+            <h2>Education</h2>
+
+            <p>HLSC</p>           
+
+        </div>
+
+    </section>
+
+    <section id=”skills”>
+
+        <div class=”section-content”>
+
+            <h2>Skills</h2>
+
+            <ul>
+
+                <li>C</li>
+
+                <li>C++</li>
+
+                <li>Java </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <section id=”projects”>
+
+        <div class=”section-content”>
+
+            <h2>Projects</h2>
+
+            <ul>
+
+                <li><a href=”#”>Sample Driving  Website ( Hackathon) </a></li>
+
+                <li><a href=”#”>Digital Portfolio.</a></li>
+
+                <!—Add more project links here 
+
+            </ul>
+
+        </div>
+
+
+
+    </section>
+
+    <section id=”resume”> 
+
+        <div class=”section-content”>
+
+            <center>
+
+            <h2>Resume</h2>
+
+            <a href=”Resume.pdf” target=”_blank” class=”download-button”>Download CV</a>
+
+        </center>
+
+
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>&copy; 2025 Krishnika D</p>
+
+    </footer>
+
+
+
+    <script>
+
+
+
+        // Smooth scrolling to section when clicking on navigation links
+
+        Document.querySelectorAll(‘a[href^=”#”]’).forEach(anchor => {
+
+            Anchor.addEventListener(‘click’, function(e) {
+
+                e.preventDefault();
+
+                const targetId = this.getAttribute(‘href’).substring(1);
+
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+
+                    window.scrollTo({
+
+                        top: targetElement.offsetTop,
+
+
+
+                        behavior: ‘smooth’
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
